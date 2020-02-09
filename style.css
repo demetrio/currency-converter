@@ -73,6 +73,7 @@ select {
 
 .app input {
 	width: 250px;
+	text-align: center;
 }
 
 .app select {
@@ -88,4 +89,20 @@ select {
 	-webkit-appearance: none;
 	display: grid;
 	align-content: center;
+}
+
+@media (max-width: 700px) {
+	.app {
+		margin: 1.5em;
+	}
+
+	.app form {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: 1fr;
+	}
+
+	.app input {
+		width: 100%;
+	}
 }
